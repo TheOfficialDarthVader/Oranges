@@ -1,9 +1,8 @@
-# DEMOranges
-DEMOranges is a Discrete Element Method implementation written in C with OpenCL.
-Building and compiling is handled by CMake.
+# Oranges
+Oranges is a simple implementation of a Lagrangian model for particle position and velocity written in C with OpenCL.
+Building and compiling is handled by CMake. It is a cut down version of the DEMOranges code which can be found [here](https://github.com/Xorgon/DEMOranges). 
 
-This implementation was created for my third year Individual Project, the project report can be found [here](https://github.com/Xorgon/IP-Report).
-The purpose of this implementation is to achieve a functional DEM implementation for large numbers of particles (10^7) that runs in approximately O(N) time.
+The README herein is as per DEMOranges.
 
 The project structure and build instructions are below. Further documentation can be found in the Wiki [here](https://github.com/Xorgon/DEMOranges/wiki).
 
