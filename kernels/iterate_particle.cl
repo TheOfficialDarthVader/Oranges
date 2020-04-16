@@ -40,7 +40,6 @@ __kernel void iterate_particle(__global particle *particles, float delta_t, int 
     if (particles[gid].density == -1) {
         return; // -1 is used to denote infinite density.
     }
-
     float3 next_vel = iterate_velocity(particles[gid], delta_t);
     float3 next_pos = iterate_position(particles[gid], delta_t, next_vel);
     particles[gid].pos = next_pos;

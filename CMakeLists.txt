@@ -109,5 +109,12 @@ if (NOT(WIN32))
     target_link_libraries(gravity_drag m)
 endif()
 
+file(GLOB_RECURSE tgv_stats_SOURCE_FILES verification/tgv_stats/tgv_sim.c)
+add_executable(tgv_stats ${tgv_stats_SOURCE_FILES} ${sim_SOURCE_FILES})
+target_link_libraries(tgv_stats ${OpenCL_LIBRARY})
+if (NOT(WIN32))
+    target_link_libraries(tgv_stats m)
+endif()
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -funroll-loops ") # Optimization stuff, TODO: Investigate.
 #SET(CMAKE_VERBOSE_MAKEFILE ON)

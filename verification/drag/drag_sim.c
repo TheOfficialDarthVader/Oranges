@@ -16,7 +16,7 @@
 #include <malloc.h>
 
 #define MAX_SOURCE_SIZE (0x100000)
-#define VERBOSE FALSE
+#define VERBOSE TRUE
 #define LOG_DATA TRUE
 
 char prefix[50];
